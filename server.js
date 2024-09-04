@@ -11,14 +11,14 @@ server.listen(PORT, () => {
 });
 const io = new Server(server, {
   cors: {
-    // origin: ["http://127.0.0.1:5500", "https://ludo.lingomingle.com"],
-    origin: ["http://127.0.0.1:5501"],
+    // origin: ["", ""],
+    origin: [""],
     methods: ["GET", "POST"],
     credentials: true,
   },
 });
 app.get('/', (req, res) => {
-  res.redirect("http://127.0.0.1:5501");
+  res.redirect("");
 });
 
 ////////////////////////////////////////////////////////////////////////////////////
